@@ -1,0 +1,169 @@
+$color-primary: #579a62;
+$color-secondary: #eff2fe;
+$color-light: #ffffff;
+$color-dark: #000000;
+$color-gray: #818187;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Lexend", sans-serif;
+  min-height: 100vh;
+  background-color: $color-primary;
+}
+
+.container{
+
+}
+.sidebar {
+  width: 234px;
+  background-color: $color-primary;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &-logo{
+    background-color: $color-light;
+    & img{
+      width: 145px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+  &-nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+}
+.nav {
+  &-active{
+
+}
+  &-menu{
+
+}
+  &-Dashboard{
+
+}
+  &-ControlUser{
+
+}
+  &-ThietBi{
+
+}
+  &-request{
+
+}
+  &-caculate{
+
+}
+  &-user{
+
+}
+}
+.active {
+  &-left{
+
+}
+  &-right{
+
+}
+}
+.fa {
+  &-solid{
+
+}
+  &-house{
+
+}
+  &-user{
+
+}
+  &-print{
+
+}
+  &-envelope-open-text{
+
+}
+  &-chart-line{
+
+}
+  &-arrow-right-from-bracket{
+
+}
+  &-list{
+
+}
+}
+.user {
+  &-avatar{
+
+}
+  &-name{
+
+}
+  &-role{
+
+}
+  &-logOut{
+
+}
+}
+.main {
+  &-content{
+
+}
+  &-content_title{
+
+}
+  &-content_dashBoard{
+
+}
+  &-element{
+
+}
+}
+.dashboard {
+  &-list{
+
+}
+  &-element{
+
+}
+}
+.element {
+  &-number{
+
+}
+  &-sub{
+
+}
+}
+.icon {
+  &-element{
+
+}
+}

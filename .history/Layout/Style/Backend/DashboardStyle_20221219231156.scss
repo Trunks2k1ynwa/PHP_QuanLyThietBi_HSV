@@ -1,0 +1,61 @@
+$primary:#579A62;
+$scondary:#FFFFFF;
+$dark:#000000;
+$light:#EFF2FE;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+.container {
+
+}
+.sidebar {
+    width: 300px;
+    background-color: ;
+  &-logo {
+  }
+  &-user {
+  }
+}
+.sibar {
+  &-nav {
+  }
+}
+.nav {
+  &-Dashboard {
+  }
+  &-ControlUser {
+  }
+  &-ThietBi {
+  }
+  &-request {
+  }
+  &-caculate {
+  }
+}
+.user {
+  &-avatar {
+  }
+  &-name {
+  }
+  &-role {
+  }
+  &-logOut {
+  }
+}

@@ -1,0 +1,67 @@
+$primary:#579A62;
+$scondary:#FFFFFF;
+$dark:#000000;
+$light:#EFF2FE;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,picture,svg,video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+  min-height: 100vh;
+}
+.container {
+
+}
+.sidebar {
+    width: 234px;
+    height: 920px;
+    background-color:$primary ;
+  &-logo {
+    width: 100%;
+    padding: 10px;
+    background-color: $scondary;
+    img{
+        width: 100%;
+    }
+  }
+  &-user {
+  }
+}
+.sibar {
+  &-nav {
+  }
+}
+.nav {
+  &-Dashboard {
+  }
+  &-ControlUser {
+  }
+  &-ThietBi {
+  }
+  &-request {
+  }
+  &-caculate {
+  }
+}
+.user {
+  &-avatar {
+  }
+  &-name {
+  }
+  &-role {
+  }
+  &-logOut {
+  }
+}
