@@ -3,7 +3,7 @@ $color-secondary: #eff2fe;
 $color-light: #ffffff;
 $color-dark: #000000;
 $color-gray: #818187;
-$color-blur1: rgba(135, 235, 175, 0.881);
+$color-blur1: rgba(135, 235, 175, 0.548);
 $color-blur2: rgba(38, 62, 169, 0.548);
 $color-gray2: rgba(222, 222, 222, 0.763);
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
@@ -243,6 +243,8 @@ body {
             .table {
               width: 100%;
               border-collapse: collapse;
+              & > * {
+              }
               &_top {
                 background-color: $color-gray2;
                 & > * {
@@ -304,20 +306,13 @@ body {
       left: 0px;
       background-color: $color-blur1;
       position: absolute;
-      opacity: 0;
-      visibility: hidden;
-      z-index: 4;
     }
-    .add,
-    .update,
-    .role {
+    .add {
       &-account {
-        opacity: 0;
-        visibility: hidden;
         position: absolute;
-        z-index: 5;
+        z-index: 2;
         width: 682px;
-        // height: 534px;
+        height: 534px;
         background-color: $color-secondary;
         border: 2px solid #00b087;
         border-radius: 10px;
@@ -326,30 +321,21 @@ body {
         transform: translate(-50%, -50%);
       }
       &-account_content {
-        position: relative;
-        padding: 20px 0px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
       }
       &-content_title {
         font-weight: 700;
         font-size: 40px;
         color: $color-primary;
-        margin-bottom: 40px;
       }
       &-content_main {
-        margin-bottom: 40px;
         tbody {
           tr {
+            th {
+            }
             td {
               font-weight: 300;
               font-size: 25px;
-              padding: 10px 0px 10px 30px;
-              input,
-              select {
+              input {
                 border: 1px solid #579a62;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 5px;
@@ -358,78 +344,29 @@ body {
                 font-size: 20px;
                 outline: none;
               }
-              select {
-                outline: none;
-                width: 100%;
-              }
             }
           }
         }
       }
-
       &-account_btn {
         display: flex;
         column-gap: 35px;
-        & button {
+        & button{
           background: rgba(22, 192, 152, 0.38);
-          border: 1px solid #00b087;
+          border: 1px solid #00B087;
           border-radius: 4px;
           color: $color-secondary;
           padding: 5px 10px;
           cursor: pointer;
         }
-      }
-    }
-    .role-content_main {
-      width: 100%;
-      border-collapse: collapse;
-      .table_top {
-        background-color: $color-gray2;
-        & > * {
-          font-size: 20px;
-          text-align: left;
-        }
-        & *:nth-child(1) {
-          padding: 18px 0px 18px 50px;
-        }
-      }
-      .table_row {
-        transition: 0.4s all linear;
-        cursor: pointer;
-        padding-right: 10px;
-        &:hover {
-          background-color: $color-blur1;
-        }
-        & > * {
-          font-size: 20px;
-          padding-left: 0;
-          border-bottom: 2px solid $color-primary;
-        }
-        & > *:nth-child(1) {
-          padding: 18px 0px 18px 50px;
-        }
-        & > *:last-child {
-          padding-right: 50px;
+        .btn_close {
+          width: 31px;
+          height: 31px;
+          background-color: $color-primary;
+          color: $color-light;
         }
       }
     }
-    .btn_close {
-      position: absolute;
-      width: 31px;
-      height: 31px;
-      background-color: $color-primary;
-      color: $color-light;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-      right: 8px;
-      top: 8px;
-      cursor: pointer;
+
     }
   }
-}
-.active {
-  opacity: 1 !important;
-  visibility: visible !important;
-}

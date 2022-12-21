@@ -3,7 +3,7 @@ $color-secondary: #eff2fe;
 $color-light: #ffffff;
 $color-dark: #000000;
 $color-gray: #818187;
-$color-blur1: rgba(135, 235, 175, 0.881);
+$color-blur1: rgba(135, 235, 175, 0.548);
 $color-blur2: rgba(38, 62, 169, 0.548);
 $color-gray2: rgba(222, 222, 222, 0.763);
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
@@ -306,16 +306,13 @@ body {
       position: absolute;
       opacity: 0;
       visibility: hidden;
-      z-index: 4;
     }
-    .add,
-    .update,
-    .role {
+    .add,.update,.role{
       &-account {
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        z-index: 5;
+        z-index: 2;
         width: 682px;
         // height: 534px;
         background-color: $color-secondary;
@@ -338,18 +335,18 @@ body {
         font-weight: 700;
         font-size: 40px;
         color: $color-primary;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
       &-content_main {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+
         tbody {
           tr {
             td {
               font-weight: 300;
               font-size: 25px;
-              padding: 10px 0px 10px 30px;
-              input,
-              select {
+              padding:10px 0px 10px 30px;;
+              input,select {
                 border: 1px solid #579a62;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 5px;
@@ -358,7 +355,7 @@ body {
                 font-size: 20px;
                 outline: none;
               }
-              select {
+              select{
                 outline: none;
                 width: 100%;
               }
@@ -370,9 +367,9 @@ body {
       &-account_btn {
         display: flex;
         column-gap: 35px;
-        & button {
+        & button{
           background: rgba(22, 192, 152, 0.38);
-          border: 1px solid #00b087;
+          border: 1px solid #00B087;
           border-radius: 4px;
           color: $color-secondary;
           padding: 5px 10px;
@@ -409,27 +406,28 @@ body {
           padding: 18px 0px 18px 50px;
         }
         & > *:last-child {
-          padding-right: 50px;
+          padding-right:50px;
         }
       }
     }
-    .btn_close {
+    .btn_close{
       position: absolute;
       width: 31px;
       height: 31px;
       background-color: $color-primary;
       color: $color-light;
-      display: flex;
-      justify-content: center;
+      display:flex;
+      justify-content: center;;
       align-items: center;
       border-radius: 5px;
       right: 8px;
       top: 8px;
       cursor: pointer;
     }
+
+    }
   }
-}
-.active {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
+  .active{
+    opacity: 1!important;
+    visibility: visible!important;
+  }

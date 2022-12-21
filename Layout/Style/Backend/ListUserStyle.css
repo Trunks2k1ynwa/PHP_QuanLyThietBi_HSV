@@ -257,7 +257,7 @@ body .container .mainbar-content .mainbar_content .content-table_body .table_row
   cursor: pointer;
 }
 body .container .mainbar-content .mainbar_content .content-table_body .table_row:hover {
-  background-color: rgba(135, 235, 175, 0.548);
+  background-color: rgba(135, 235, 175, 0.881);
 }
 body .container .mainbar-content .mainbar_content .content-table_body .table_row > * {
   border-bottom: 1px solid rgba(237, 237, 237, 0.6);
@@ -295,14 +295,20 @@ body .container .blur {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(135, 235, 175, 0.548);
+  background-color: rgba(135, 235, 175, 0.881);
   position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4;
 }
-body .container .add-account {
+body .container .add-account,
+body .container .update-account,
+body .container .role-account {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   width: 682px;
-  height: 534px;
   background-color: #eff2fe;
   border: 2px solid #00b087;
   border-radius: 10px;
@@ -310,16 +316,43 @@ body .container .add-account {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body .container .add-content_title {
+body .container .add-account_content,
+body .container .update-account_content,
+body .container .role-account_content {
+  position: relative;
+  padding: 20px 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .add-content_title,
+body .container .update-content_title,
+body .container .role-content_title {
   font-weight: 700;
   font-size: 40px;
   color: #579a62;
+  margin-bottom: 40px;
 }
-body .container .add-content_main tbody tr td {
+body .container .add-content_main,
+body .container .update-content_main,
+body .container .role-content_main {
+  margin-bottom: 40px;
+}
+body .container .add-content_main tbody tr td,
+body .container .update-content_main tbody tr td,
+body .container .role-content_main tbody tr td {
   font-weight: 300;
   font-size: 25px;
+  padding: 10px 0px 10px 30px;
 }
-body .container .add-content_main tbody tr td input {
+body .container .add-content_main tbody tr td input,
+body .container .add-content_main tbody tr td select,
+body .container .update-content_main tbody tr td input,
+body .container .update-content_main tbody tr td select,
+body .container .role-content_main tbody tr td input,
+body .container .role-content_main tbody tr td select {
   border: 1px solid #579a62;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -328,22 +361,78 @@ body .container .add-content_main tbody tr td input {
   font-size: 20px;
   outline: none;
 }
-body .container .add-account_btn {
+body .container .add-content_main tbody tr td select,
+body .container .update-content_main tbody tr td select,
+body .container .role-content_main tbody tr td select {
+  outline: none;
+  width: 100%;
+}
+body .container .add-account_btn,
+body .container .update-account_btn,
+body .container .role-account_btn {
   display: flex;
   -moz-column-gap: 35px;
        column-gap: 35px;
 }
-body .container .add-account_btn button {
+body .container .add-account_btn button,
+body .container .update-account_btn button,
+body .container .role-account_btn button {
   background: rgba(22, 192, 152, 0.38);
-  border: 1px solid #00B087;
+  border: 1px solid #00b087;
   border-radius: 4px;
   color: #eff2fe;
   padding: 5px 10px;
   cursor: pointer;
 }
-body .container .add-account_btn .btn_close {
+body .container .role-content_main {
+  width: 100%;
+  border-collapse: collapse;
+}
+body .container .role-content_main .table_top {
+  background-color: rgba(222, 222, 222, 0.763);
+}
+body .container .role-content_main .table_top > * {
+  font-size: 20px;
+  text-align: left;
+}
+body .container .role-content_main .table_top *:nth-child(1) {
+  padding: 18px 0px 18px 50px;
+}
+body .container .role-content_main .table_row {
+  transition: 0.4s all linear;
+  cursor: pointer;
+  padding-right: 10px;
+}
+body .container .role-content_main .table_row:hover {
+  background-color: rgba(135, 235, 175, 0.881);
+}
+body .container .role-content_main .table_row > * {
+  font-size: 20px;
+  padding-left: 0;
+  border-bottom: 2px solid #579a62;
+}
+body .container .role-content_main .table_row > *:nth-child(1) {
+  padding: 18px 0px 18px 50px;
+}
+body .container .role-content_main .table_row > *:last-child {
+  padding-right: 50px;
+}
+body .container .btn_close {
+  position: absolute;
   width: 31px;
   height: 31px;
   background-color: #579a62;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1 !important;
+  visibility: visible !important;
 }/*# sourceMappingURL=ListUserStyle.css.map */
