@@ -61,9 +61,9 @@ body {
         .nav-active {
           position: absolute;
           left: 0;
-          top: 70px;
+          top: 55px;
           z-index: 0;
-          right: 15px;
+          right: 20px;
           padding: 0;
           display: flex;
           column-gap: 10px;
@@ -76,7 +76,7 @@ body {
             border-radius: 0px 4px 4px 0px;
           }
           &-right {
-            width:200px;
+            width: 196px;
             height: 50px;
             background: $color-light;
             box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
@@ -88,41 +88,29 @@ body {
           padding-top: 10px;
           display: flex;
           flex-direction: column;
-          row-gap: 10px;
           & > * {
-            position: relative;
             display: flex;
-            flex-direction: column;
-            row-gap:10px;
+            padding: 15px 20px 15px 30px;
+            justify-content: flex-start;
+            column-gap: 20px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            color: $color-light;
             cursor: pointer;
-            .menu_item{
-              height: 50px;
-              height: 100%;
-              display: flex;
-              padding: 15px 20px 15px 30px;
-              justify-content: flex-start;
-              width: 100%;
-              column-gap: 10px;
-              align-items: center;
-              color: $color-light;
-            }
-            .item-active{
+          }
+          & i {
+            color: $color-light;
+          }
+          & span {
+            font-size: 14px;
+          }
+          &_ControlUser {
+            & > i {
               color: $color-primary;
             }
-            .menu_item-sub{
-              background-color: $color-light;
+            & > span {
               color: $color-primary;
-              box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
-              border-radius: 10px;
-              margin:0 15px 0px 15px;
-              &>*{
-                font-weight: 500;
-                font-size: 14px;
-                padding: 10px 15px;
-                text-align: center;
-                border-bottom: 1px solid $color-primary;
-                cursor: pointer;
-            }
             }
           }
         }
@@ -389,11 +377,10 @@ body {
           color: $color-dark;
           padding: 5px 10px;
           cursor: pointer;
-          transition: all 0.2s linear;
+          transition:all 0.2s linear;
         }
-        & button:hover {
-          background: $color-primary;
-          color: $color-secondary;
+        & button:hover{
+          background: rgba(3, 252, 194, 0.38);
         }
       }
     }

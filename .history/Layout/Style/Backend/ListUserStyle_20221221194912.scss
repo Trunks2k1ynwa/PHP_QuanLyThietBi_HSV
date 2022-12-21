@@ -63,7 +63,7 @@ body {
           left: 0;
           top: 70px;
           z-index: 0;
-          right: 15px;
+          right: 20px;
           padding: 0;
           display: flex;
           column-gap: 10px;
@@ -76,7 +76,7 @@ body {
             border-radius: 0px 4px 4px 0px;
           }
           &-right {
-            width:200px;
+            width: 196px;
             height: 50px;
             background: $color-light;
             box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
@@ -114,7 +114,7 @@ body {
               color: $color-primary;
               box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
               border-radius: 10px;
-              margin:0 15px 0px 15px;
+              margin:15px 20px 15px 30px;
               &>*{
                 font-weight: 500;
                 font-size: 14px;
@@ -123,8 +123,60 @@ body {
                 border-bottom: 1px solid $color-primary;
                 cursor: pointer;
             }
+              // & *{
+              //   font-size: 14px;
+              //   font-weight: 600;
+              // }
             }
           }
+          // & i {
+          //   color: $color-light;
+          // }
+          // & span {
+          //   font-size: 14px;
+          // }
+          // &_ControlUser {
+          //   .controlUser {
+          //     display: flex;
+          //     padding: 15px 20px 15px 30px;
+          //     justify-content: flex-start;
+          //     width: 100%;
+          //     column-gap: 15px;
+          //     align-items: center;
+          //     color: $color-primary;
+          //     background-color: black;
+          //     & *{
+          //       font-size: 14px;
+          //       font-weight: 600;
+          //     }
+          //     &>:first-child{
+          //       font-size: 18px;
+          //     }
+          //   }
+          //   .controlUser-hover {
+          //     background-color: $color-light;
+          //     color: $color-primary;
+          //     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+          //     border-radius: 10px;
+          //     margin:0px 19px 20px 19px;
+          //     &>*{
+          //       font-weight: 500;
+          //       font-size: 14px;
+          //       padding: 10px 15px;
+          //       text-align: center;
+          //       border-bottom: 1px solid $color-primary;
+          //       cursor: pointer;
+          //     }
+          //   }
+          //   .list {
+          //     &-user {
+          //     }
+          //   }
+          //   .role {
+          //     &-feature {
+          //     }
+          //   }
+          // }
         }
         .nav-user {
           position: relative;
