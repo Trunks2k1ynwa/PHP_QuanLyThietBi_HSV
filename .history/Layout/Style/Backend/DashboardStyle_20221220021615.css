@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  min-height: 100vh;
+  background-color: #579a62;
+}
+
+.sidebar {
+  width: 234px;
+  background-color: #579a62;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-logo {
+  background-color: #ffffff;
+}
+.sidebar-logo img {
+  width: 145px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sidebar-nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}/*# sourceMappingURL=DashboardStyle_20221220021615.css.map */

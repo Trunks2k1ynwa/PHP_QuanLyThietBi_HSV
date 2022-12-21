@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách người dùng</title>
+    <link rel="stylesheet" type="text/css" href="../Style/Backend/ListUserStyle.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></head>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar-content">
+        <div class="sidebar-content-logo">
+          <img src="../../Img/Logo.png" alt="" />
+        </div>
+        <div class="sidebar-content-nav">
+          <div class="nav-active">
+            <div class="nav-active-left"></div>
+            <div class="nav-active-right"></div>
+          </div>
+          <div class="nav-menu">
+            <div class="nav-menu_Dashboard">
+                <i class="fa-solid fa-house"></i>
+                <span>DashBoard</span>
+            </div>
+            <div class="nav-menu_ControlUser">
+              <i class="fa-solid fa-user"></i>
+              <span>Quản lý người dùng</span>
+            </div>
+            <div class="nav-menu_ThietBi">
+              <i class="fa-solid fa-print"></i>              <span>Thiết bị</span>
+            </div>
+            <div class="nav-menu_request">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <span>Yêu cầu thiết bị</span>
+            </div>
+            <div class="nav-menu_caculate">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Báo cáo - thống kê</span>
+            </div>
+          </div>
+          <div class="nav-user">
+            <div class="user-avatar">
+              <img src="../../Img/avatar.jpg" alt="" />
+            </div>
+            <h3 class="user-name">N.Hùng</h3>
+            <p class="user-role">Admin</p>
+            <button class="user-logOut">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Đăng Xuất</span>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="mainbar-content">
+        <div class="mainbar_title">
+          <h1>
+            Quản lý tài khoản người dùng
+          </h1>
+        </div>
+        <div class="mainbar_content">
+          <div class="content-table">
+            <div class="content-table_header">
+              <h1 class="table-title">
+                Danh sách người dùng
+              </h1>
+              <button class="addnew">Tạo mới
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="delline">Xóa dòng được chọn
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <select name="select" id="select">
+                <option value="name">Tên</option>
+                <option value="role">Quyền truy cập</option>
+                <option value="id">ID tài khoản</option>
+              </select>
+            </div>
+            <div class="content-table_body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"><input type="checkbox"></th>
+                    <th scope="col">Tên tài khoản</th>
+                    <th scope="col">Quyền truy cập</th>
+                    <th scope="col">Trình trạng</th>
+                    <th scope="col">Mật khẩu</th>
+                    <th scope="col">Mô tả</th>
+                    <th scope="col">Thao tác</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><input type="checkbox"></th>
+                    <td>Lê Văn Trung</td>
+                    <td>Lê Văn Trung</td>
+                    <td>Lê Văn Trung</td>
+                    <td>Lê Văn Trung</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="content-table_footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
