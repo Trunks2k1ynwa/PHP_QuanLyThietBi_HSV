@@ -116,8 +116,7 @@ body {
               box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
               border-radius: 10px;
               margin: 0 15px 0px 15px;
-              transition: all 2s linear;
-              // height: 100%;
+              transition: all 0.5s linear;
               & > * {
                 font-weight: 500;
                 font-size: 14px;
@@ -578,5 +577,6 @@ body {
   display: none;
 }
 .toggle{
-  height: 0px;
+  height: 0;
+  transition: all 0.3s ease;
 }

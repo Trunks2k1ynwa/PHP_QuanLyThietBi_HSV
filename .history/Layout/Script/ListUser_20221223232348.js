@@ -1,7 +1,9 @@
 import handleToggle, { $, $$, getY, handleClass, handleClose } from "./Import.js";
 $('.nav-menu_DashBoard').classList.add('item-active');
+const toggleClass = handleToggle;
 // Menu navigation
 const menuNav = $$('.nav-menu>*')
+console.log(menuNav)
 const menuSub = $$('.menu_item-sub');
 for (const item of menuSub) {
     item.classList.add('hidden');
@@ -16,7 +18,8 @@ for (let i = 0; i < [...menuNav].length; i++) {
             [...menuNav][index]?.children[1]?.classList.add('hidden');
             [...listView][index].classList.remove('view_active');
         }
-        [...menuNav][i]?.children[1]?.classList.remove('hidden');
+        toggleClass([...menuNav][i],$('.nav-menu_TaiKhoan>.menu_item-sub'),'hidden');
+        // [...menuNav][i]?.children[1]?.classList.toggle('hidden');
         [...menuNav][i].classList.add('item-active');
         [...listView][i].classList.add('view_active');
         $('.nav-active').style.top = `${getY('.item-active').top-145}px`;

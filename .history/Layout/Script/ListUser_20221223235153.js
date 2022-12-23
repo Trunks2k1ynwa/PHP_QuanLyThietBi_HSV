@@ -4,10 +4,10 @@ $('.nav-menu_DashBoard').classList.add('item-active');
 const menuNav = $$('.nav-menu>*')
 const menuSub = $$('.menu_item-sub');
 for (const item of menuSub) {
-    item.classList.add('hidden');
+    item.classList.add('toggle');
 }
 // Side bar action 
-$('.nav-menu_DashBoard')?.children[1]?.classList.remove('hidden');
+$('.nav-menu_DashBoard')?.children[1]?.classList.remove('toggle');
 const listView = $$('.sectionbar-content>*')
 for (let i = 0; i < [...menuNav].length; i++) {
     [...menuNav][i].onclick = (e)=>{

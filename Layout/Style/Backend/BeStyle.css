@@ -120,13 +120,13 @@ body .container .sidebar-content-nav .nav-menu > * .menu_item-sub {
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin: 0 15px 0px 15px;
-  transition: all 0.5s linear;
+  transition: all 2s linear;
 }
 body .container .sidebar-content-nav .nav-menu > * .menu_item-sub > * {
   font-weight: 500;
   font-size: 14px;
   padding: 10px 15px;
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid #579a62;
   cursor: pointer;
 }
@@ -558,10 +558,15 @@ body .container .mainbar_content .content-table_footer .pagination > a:active {
 .active {
   opacity: 1 !important;
   visibility: visible !important;
+  display: inline-block;
 }
 
 .hidden {
   opacity: 0;
   visibility: hidden;
   display: none;
+}
+
+.toggle {
+  height: 0px;
 }/*# sourceMappingURL=BeStyle.css.map */

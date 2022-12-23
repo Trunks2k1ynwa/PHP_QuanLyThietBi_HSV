@@ -1,13 +1,14 @@
 import handleToggle, { $, $$, getY, handleClass, handleClose } from "./Import.js";
 $('.nav-menu_DashBoard').classList.add('item-active');
+console.log($('.nav-menu_DashBoard').classList.contains('nav-menu_DashBoard'))
 // Menu navigation
 const menuNav = $$('.nav-menu>*')
 const menuSub = $$('.menu_item-sub');
 for (const item of menuSub) {
-    item.classList.add('hidden');
+    item.classList.add('toggle');
 }
 // Side bar action 
-$('.nav-menu_DashBoard')?.children[1]?.classList.remove('hidden');
+$('.nav-menu_DashBoard')?.children[1]?.classList.remove('toggle');
 const listView = $$('.sectionbar-content>*')
 for (let i = 0; i < [...menuNav].length; i++) {
     [...menuNav][i].onclick = (e)=>{

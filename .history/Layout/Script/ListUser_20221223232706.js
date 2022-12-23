@@ -16,7 +16,7 @@ for (let i = 0; i < [...menuNav].length; i++) {
             [...menuNav][index]?.children[1]?.classList.add('hidden');
             [...listView][index].classList.remove('view_active');
         }
-        [...menuNav][i]?.children[1]?.classList.remove('hidden');
+        handleToggle([...menuNav][i],[...menuNav][i].children[1],'hidden');
         [...menuNav][i].classList.add('item-active');
         [...listView][i].classList.add('view_active');
         $('.nav-active').style.top = `${getY('.item-active').top-145}px`;
