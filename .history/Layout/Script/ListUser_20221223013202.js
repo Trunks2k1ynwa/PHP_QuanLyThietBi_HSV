@@ -23,9 +23,7 @@ const getY = (classname)=>{
     }
 }
 
-$('.user-logOut').onclick = function(){
-    console.log(this);
-}
+
 const navActiveP = getY('.nav-active').top;
 // Menu navigation
 const menuNav = $$('.nav-menu>*')
@@ -39,6 +37,7 @@ $('.nav-menu_Dashboard')?.children[1]?.classList.remove('hidden');
 const listView = $$('.sectionbar-content>*')
 for (let i = 0; i < [...menuNav].length; i++) {
     [...menuNav][i].onclick = (e)=>{
+        console.log(this);
         for (let index=0;index<[...menuNav].length;index++) {
             [...menuNav][index].classList.remove('item-active');
             [...menuNav][index]?.children[1]?.classList.add('hidden');
@@ -56,6 +55,7 @@ for (let i = 0; i < [...menuNav].length; i++) {
 
 // click btn addUser
 $('.addnew').onclick=(e)=>{
+    console.log(this)
     handleClass($('.add-account'),$('.overlay'));
 }
 // click item role feature

@@ -394,7 +394,7 @@ body {
     }
     .add,
     .update,
-    .role {
+    .role,.update_view {
       &-account {
         opacity: 0;
         visibility: hidden;

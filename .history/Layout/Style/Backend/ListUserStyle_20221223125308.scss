@@ -392,9 +392,7 @@ body {
       visibility: hidden;
       z-index: 4;
     }
-    .add,
-    .update,
-    .role {
+    .update_view,.add_view,.role_view{
       &-account {
         opacity: 0;
         visibility: hidden;
@@ -409,7 +407,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
       }
-      &-account_content {
+      &_content {
         position: relative;
         padding: 20px 0px;
         height: 100%;
@@ -418,13 +416,13 @@ body {
         align-items: center;
         justify-content: space-between;
       }
-      &-content_title {
+      &_title {
         font-weight: 700;
         font-size: 40px;
         color: $color-primary;
         margin-bottom: 40px;
       }
-      &-content_main {
+      &_main {
         margin-bottom: 40px;
         tbody {
           tr {
@@ -451,7 +449,7 @@ body {
         }
       }
 
-      &-account_btn {
+      &_btn {
         display: flex;
         column-gap: 35px;
         & button {
@@ -518,6 +516,15 @@ body {
     }
   }
 }
+.update_view,.add_view,.role_view{
+
+}
+
+
+
+
+
+
 .active {
   opacity: 1 !important;
   visibility: visible !important;

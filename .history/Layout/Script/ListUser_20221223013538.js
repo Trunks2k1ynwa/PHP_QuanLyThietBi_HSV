@@ -23,7 +23,7 @@ const getY = (classname)=>{
     }
 }
 
-$('.user-logOut').onclick = function(){
+$('user-logOut').onclick = function(){
     console.log(this);
 }
 const navActiveP = getY('.nav-active').top;

@@ -23,9 +23,7 @@ const getY = (classname)=>{
     }
 }
 
-$('.user-logOut').onclick = function(){
-    console.log(this);
-}
+
 const navActiveP = getY('.nav-active').top;
 // Menu navigation
 const menuNav = $$('.nav-menu>*')
@@ -39,6 +37,7 @@ $('.nav-menu_Dashboard')?.children[1]?.classList.remove('hidden');
 const listView = $$('.sectionbar-content>*')
 for (let i = 0; i < [...menuNav].length; i++) {
     [...menuNav][i].onclick = (e)=>{
+        console.log(this);
         for (let index=0;index<[...menuNav].length;index++) {
             [...menuNav][index].classList.remove('item-active');
             [...menuNav][index]?.children[1]?.classList.add('hidden');
@@ -83,6 +82,7 @@ handleClose('.role-account','.btn_close')
 
 for(node of $$('.update_user>i')){
     node.onclick = (e)=>{
+        console.log(this);
         handleClass($('.update-account'),$('.overlay'),"add",)
     }
 }

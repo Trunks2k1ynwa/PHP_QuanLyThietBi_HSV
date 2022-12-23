@@ -392,10 +392,11 @@ body {
       visibility: hidden;
       z-index: 4;
     }
-    .add,
-    .update,
-    .role {
-      &-account {
+    .add {
+      &_view{
+    
+    }
+      &-account{
         opacity: 0;
         visibility: hidden;
         position: absolute;
@@ -408,8 +409,8 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-      &-account_content {
+    }
+      &_view_content{
         position: relative;
         padding: 20px 0px;
         height: 100%;
@@ -417,14 +418,14 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-      }
-      &-content_title {
+    }
+      &_view_content_title{
         font-weight: 700;
         font-size: 40px;
         color: $color-primary;
         margin-bottom: 40px;
-      }
-      &-content_main {
+    }
+      &_view_content_main{
         margin-bottom: 40px;
         tbody {
           tr {
@@ -449,9 +450,8 @@ body {
             }
           }
         }
-      }
-
-      &-account_btn {
+    }
+      &_view_content_btn{
         display: flex;
         column-gap: 35px;
         & button {
@@ -467,56 +467,9 @@ body {
           background: $color-primary;
           color: $color-secondary;
         }
-      }
     }
-    .role-content_main {
-      width: 100%;
-      border-collapse: collapse;
-      .table_top {
-        background-color: $color-gray2;
-        & > * {
-          font-size: 20px;
-          text-align: left;
-        }
-        & *:nth-child(1) {
-          padding: 18px 0px 18px 50px;
-        }
-      }
-      .table_row {
-        transition: 0.4s all linear;
-        cursor: pointer;
-        padding-right: 10px;
-        &:hover {
-          background-color: $color-blur1;
-        }
-        & > * {
-          font-size: 20px;
-          padding-left: 0;
-          border-bottom: 2px solid $color-primary;
-        }
-        & > *:nth-child(1) {
-          padding: 18px 0px 18px 50px;
-        }
-        & > *:last-child {
-          padding-right: 50px;
-        }
-      }
     }
-    .btn_close {
-      position: absolute;
-      width: 31px;
-      height: 31px;
-      background-color: $color-primary;
-      color: $color-light;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-      right: 8px;
-      top: 8px;
-      cursor: pointer;
-    }
-  }
+}
 }
 .active {
   opacity: 1 !important;

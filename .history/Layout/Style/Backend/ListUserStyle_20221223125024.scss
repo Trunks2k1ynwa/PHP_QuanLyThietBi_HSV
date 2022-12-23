@@ -392,9 +392,7 @@ body {
       visibility: hidden;
       z-index: 4;
     }
-    .add,
-    .update,
-    .role {
+    .update_view,.add_view,.role_view{
       &-account {
         opacity: 0;
         visibility: hidden;
@@ -518,6 +516,15 @@ body {
     }
   }
 }
+.update_view,.add_view,.role_view{
+
+}
+
+
+
+
+
+
 .active {
   opacity: 1 !important;
   visibility: visible !important;
