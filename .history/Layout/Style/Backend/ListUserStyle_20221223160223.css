@@ -200,8 +200,8 @@ body .container .sectionbar-content .mainbar-content .mainbar_title {
   height: 145px;
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
-  padding: 0px 50px;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 body .container .sectionbar-content .mainbar-content .mainbar_title h1 {
@@ -209,65 +209,15 @@ body .container .sectionbar-content .mainbar-content .mainbar_title h1 {
   font-size: 30px;
   color: #579a62;
   line-height: 100%;
-  margin-top: 5px;
 }
 body .container .sectionbar-content .mainbar-content .mainbar_title p {
   font-size: 25px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
-body .container .sectionbar-content .mainbar-content .mainbar_title .search_info {
-  display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-  position: relative;
-}
-body .container .sectionbar-content .mainbar-content .mainbar_title .search_info input {
-  padding: 10px 0px 10px 50px;
-  outline: none;
-  background: #ededed;
-  border: 1px solid #579a62;
-  border-radius: 16px;
-  font-size: 16px;
-  color: #579a62;
-}
-body .container .sectionbar-content .mainbar-content .mainbar_title .search_info > i {
-  position: absolute;
-  top: 15px;
-  left: 18px;
-  font-size: 20px;
-  color: #579a62;
-  cursor: pointer;
-}
-body .container .sectionbar-content .mainbar-content .mainbar_title .search_info .notification {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  background: #ededed;
-  border: 1px solid #579a62;
-  border-radius: 24px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-body .container .sectionbar-content .mainbar-content .mainbar_title .search_info .notification > i {
-  color: #579a62;
-  font-size: 20px;
-}
-body .container .sectionbar-content .mainbar-content .mainbar_title .search_info .notification > i::after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: red;
-  position: absolute;
-  right: 14px;
-  top: 13px;
-}
-body .container .mainbar_content.dashboard {
+body .container .sectionbar-content .mainbar-content .mainbar_content.dashboard {
   padding: 90px;
 }
-body .container .mainbar_content.dashboard .dashboard-list {
+body .container .sectionbar-content .mainbar-content .mainbar_content.dashboard .dashboard-list {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 50px;
@@ -276,7 +226,7 @@ body .container .mainbar_content.dashboard .dashboard-list {
   row-gap: 50px;
   align-content: flex-start;
 }
-body .container .mainbar_content.dashboard .dashboard-list .dashboard-element {
+body .container .sectionbar-content .mainbar-content .mainbar_content.dashboard .dashboard-list .dashboard-element {
   width: 300px;
   height: 127px;
   background: #ffffff;
@@ -287,16 +237,16 @@ body .container .mainbar_content.dashboard .dashboard-list .dashboard-element {
   align-items: center;
   justify-content: space-between;
 }
-body .container .mainbar_content.dashboard .dashboard-list .dashboard-element .main-element .element-number {
+body .container .sectionbar-content .mainbar-content .mainbar_content.dashboard .dashboard-list .dashboard-element .main-element .element-number {
   font-weight: 700;
   font-size: 50px;
 }
-body .container .mainbar_content.dashboard .dashboard-list .dashboard-element .main-element .element-sub {
+body .container .sectionbar-content .mainbar-content .mainbar_content.dashboard .dashboard-list .dashboard-element .main-element .element-sub {
   font-weight: 400;
   font-size: 20px;
   color: #818187;
 }
-body .container .mainbar_content.dashboard .dashboard-list .dashboard-element .icon-element {
+body .container .sectionbar-content .mainbar-content .mainbar_content.dashboard .dashboard-list .dashboard-element .icon-element {
   width: 48px;
   height: 48px;
   background: rgba(135, 235, 175, 0.881);
@@ -305,16 +255,16 @@ body .container .mainbar_content.dashboard .dashboard-list .dashboard-element .i
   justify-content: center;
   align-items: center;
 }
-body .container .mainbar_content.dashboard .dashboard-list .dashboard-element .icon-element > i {
+body .container .sectionbar-content .mainbar-content .mainbar_content.dashboard .dashboard-list .dashboard-element .icon-element > i {
   color: #ffffff;
 }
-body .container .mainbar_content {
+body .container .sectionbar-content .mainbar-content .mainbar_content {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
-body .container .mainbar_content .content-table {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table {
   background: #ffffff;
   width: 1103px;
   height: 650px;
@@ -324,7 +274,7 @@ body .container .mainbar_content .content-table {
   margin-right: auto;
   align-self: center;
 }
-body .container .mainbar_content .content-table_header {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_header {
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 40px;
@@ -332,11 +282,11 @@ body .container .mainbar_content .content-table_header {
   margin: 40px;
   position: relative;
 }
-body .container .mainbar_content .content-table_header .table-title {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_header .table-title {
   font-weight: 500;
   font-size: 25px;
 }
-body .container .mainbar_content .content-table_header .addnew {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_header .addnew {
   padding: 5px 15px;
   background: #579a62;
   border: 1px solid rgb(0, 0, 0);
@@ -344,7 +294,7 @@ body .container .mainbar_content .content-table_header .addnew {
   cursor: pointer;
   color: #ffffff;
 }
-body .container .mainbar_content .content-table_header .delline {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_header .delline {
   padding: 5px 15px;
   background: #579a62;
   border: 1px solid rgb(0, 0, 0);
@@ -352,7 +302,7 @@ body .container .mainbar_content .content-table_header .delline {
   color: #ffffff;
   cursor: pointer;
 }
-body .container .mainbar_content .content-table_header .sortby {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_header .sortby {
   position: absolute;
   color: black;
   top: 7px;
@@ -363,7 +313,7 @@ body .container .mainbar_content .content-table_header .sortby {
   line-height: 18px;
   color: #818187;
 }
-body .container .mainbar_content .content-table_header .sort {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_header .sort {
   padding-left: 50px;
   width: 200px;
   background: #ffffff;
@@ -372,45 +322,45 @@ body .container .mainbar_content .content-table_header .sort {
   outline: none;
   position: relative;
 }
-body .container .mainbar_content .content-table_body .table {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table {
   width: 100%;
   border-collapse: collapse;
 }
-body .container .mainbar_content .content-table_body .table_top {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table_top {
   background-color: rgba(222, 222, 222, 0.763);
 }
-body .container .mainbar_content .content-table_body .table_top > * {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table_top > * {
   text-align: left;
 }
-body .container .mainbar_content .content-table_body .table_top *:nth-child(1) {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table_top *:nth-child(1) {
   padding: 18px 0px 18px 50px;
 }
-body .container .mainbar_content .content-table_body .table_row {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table_row {
   transition: 0.4s all linear;
   cursor: pointer;
 }
-body .container .mainbar_content .content-table_body .table_row:hover {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table_row:hover {
   background-color: rgba(135, 235, 175, 0.881);
 }
-body .container .mainbar_content .content-table_body .table_row > * {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table_row > * {
   border-bottom: 1px solid rgba(237, 237, 237, 0.6);
 }
-body .container .mainbar_content .content-table_body .table_row > *:nth-child(1) {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table_row > *:nth-child(1) {
   padding: 18px 0px 18px 50px;
 }
-body .container .mainbar_content .content-table_body .table_row i {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_body .table_row i {
   text-align: center;
   display: block;
 }
-body .container .mainbar_content .content-table_footer {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_footer {
   padding: 18px 50px;
   display: flex;
   justify-content: space-between;
 }
-body .container .mainbar_content .content-table_footer .showresult {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_footer .showresult {
   color: #818187;
 }
-body .container .mainbar_content .content-table_footer .pagination > a {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_footer .pagination > a {
   text-decoration: none;
   padding: 6px 10px;
   border-radius: 5px;
@@ -419,12 +369,11 @@ body .container .mainbar_content .content-table_footer .pagination > a {
   border: 1px solid rgba(77, 81, 189, 0.53);
   transition: 0.2s all linear infinite;
 }
-body .container .mainbar_content .content-table_footer .pagination > a:active {
+body .container .sectionbar-content .mainbar-content .mainbar_content .content-table_footer .pagination > a:active {
   background-color: #579a62;
   color: #ffffff;
 }
-
-.overlay {
+body .container .overlay {
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -435,8 +384,9 @@ body .container .mainbar_content .content-table_footer .pagination > a:active {
   visibility: hidden;
   z-index: 4;
 }
-
-.view_action {
+body .container .add-account,
+body .container .update-account,
+body .container .role-account {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -449,7 +399,9 @@ body .container .mainbar_content .content-table_footer .pagination > a:active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.view_action_content {
+body .container .add-account_content,
+body .container .update-account_content,
+body .container .role-account_content {
   position: relative;
   padding: 20px 0px;
   height: 100%;
@@ -458,22 +410,32 @@ body .container .mainbar_content .content-table_footer .pagination > a:active {
   align-items: center;
   justify-content: space-between;
 }
-.view_action_title {
+body .container .add-content_title,
+body .container .update-content_title,
+body .container .role-content_title {
   font-weight: 700;
   font-size: 40px;
   color: #579a62;
   margin-bottom: 40px;
 }
-.view_action_main {
+body .container .add-content_main,
+body .container .update-content_main,
+body .container .role-content_main {
   margin-bottom: 40px;
 }
-.view_action_main tbody tr td {
+body .container .add-content_main tbody tr td,
+body .container .update-content_main tbody tr td,
+body .container .role-content_main tbody tr td {
   font-weight: 300;
   font-size: 25px;
   padding: 10px 0px 10px 30px;
 }
-.view_action_main tbody tr td input,
-.view_action_main tbody tr td select {
+body .container .add-content_main tbody tr td input,
+body .container .add-content_main tbody tr td select,
+body .container .update-content_main tbody tr td input,
+body .container .update-content_main tbody tr td select,
+body .container .role-content_main tbody tr td input,
+body .container .role-content_main tbody tr td select {
   border: 1px solid #579a62;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -482,16 +444,22 @@ body .container .mainbar_content .content-table_footer .pagination > a:active {
   font-size: 20px;
   outline: none;
 }
-.view_action_main tbody tr td select {
+body .container .add-content_main tbody tr td select,
+body .container .update-content_main tbody tr td select,
+body .container .role-content_main tbody tr td select {
   outline: none;
   width: 100%;
 }
-.view_action_btn {
+body .container .add-account_btn,
+body .container .update-account_btn,
+body .container .role-account_btn {
   display: flex;
   -moz-column-gap: 35px;
        column-gap: 35px;
 }
-.view_action_btn button {
+body .container .add-account_btn button,
+body .container .update-account_btn button,
+body .container .role-account_btn button {
   background: rgba(99, 176, 158, 0.38);
   border: 1px solid #00b087;
   border-radius: 4px;
@@ -500,46 +468,46 @@ body .container .mainbar_content .content-table_footer .pagination > a:active {
   cursor: pointer;
   transition: all 0.2s linear;
 }
-.view_action_btn button:hover {
+body .container .add-account_btn button:hover,
+body .container .update-account_btn button:hover,
+body .container .role-account_btn button:hover {
   background: #579a62;
   color: #eff2fe;
 }
-
-.role-account .view_action_main {
+body .container .role-content_main {
   width: 100%;
   border-collapse: collapse;
 }
-.role-account .view_action_main .table_top {
+body .container .role-content_main .table_top {
   background-color: rgba(222, 222, 222, 0.763);
 }
-.role-account .view_action_main .table_top > * {
+body .container .role-content_main .table_top > * {
   font-size: 20px;
   text-align: left;
 }
-.role-account .view_action_main .table_top *:nth-child(1) {
+body .container .role-content_main .table_top *:nth-child(1) {
   padding: 18px 0px 18px 50px;
 }
-.role-account .view_action_main .table_row {
+body .container .role-content_main .table_row {
   transition: 0.4s all linear;
   cursor: pointer;
   padding-right: 10px;
 }
-.role-account .view_action_main .table_row:hover {
+body .container .role-content_main .table_row:hover {
   background-color: rgba(135, 235, 175, 0.881);
 }
-.role-account .view_action_main .table_row > * {
+body .container .role-content_main .table_row > * {
   font-size: 20px;
   padding-left: 0;
   border-bottom: 2px solid #579a62;
 }
-.role-account .view_action_main .table_row > *:nth-child(1) {
+body .container .role-content_main .table_row > *:nth-child(1) {
   padding: 18px 0px 18px 50px;
 }
-.role-account .view_action_main .table_row > *:last-child {
+body .container .role-content_main .table_row > *:last-child {
   padding-right: 50px;
 }
-
-.btn_close {
+body .container .btn_close {
   position: absolute;
   width: 31px;
   height: 31px;
@@ -563,4 +531,4 @@ body .container .mainbar_content .content-table_footer .pagination > a:active {
   opacity: 0;
   visibility: hidden;
   display: none;
-}/*# sourceMappingURL=ListUserStyle.css.map */
+}/*# sourceMappingURL=ListUserStyle_20221223160223.css.map */

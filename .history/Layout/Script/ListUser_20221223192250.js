@@ -80,27 +80,19 @@ function handleClose (viewparent,btnchild) {
         handleClass($(viewparent),$('.overlay'),'remove','active')
     }
 }
-// account user
 handleClose('.update-account','.btn_close')
 handleClose('.update-account','.btn_cancel')
 handleClose('.add-account','.btn_cancel')
 handleClose('.add-account','.btn_close')
 handleClose('.role-account','.btn_cancel')
 handleClose('.role-account','.btn_close')
-// Thiet bi
 handleClose('.update-thietbi','.btn_close')
 handleClose('.update-thietbi','.btn_cancel')
 handleClose('.add-thietbi','.btn_cancel')
 handleClose('.add-thietbi','.btn_close')
 
-
 for(node of $$('.update_user>i')){
     node.onclick = (e)=>{
         handleClass($('.update-account'),$('.overlay'),"add",)
-    }
-}
-for(node of $$('.update_thietbi>i')){
-    node.onclick = (e)=>{
-        handleClass($('.update-thietbi'),$('.overlay'),"add",)
     }
 }
