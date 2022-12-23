@@ -286,6 +286,7 @@ body .container .mainbar_content.dashboard .dashboard-list .dashboard-element {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 body .container .mainbar_content.dashboard .dashboard-list .dashboard-element .main-element .element-number {
   font-weight: 700;
@@ -563,4 +564,4 @@ body .container .mainbar_content .content-table_footer .pagination > a:active {
   opacity: 0;
   visibility: hidden;
   display: none;
-}/*# sourceMappingURL=ListUserStyle.css.map */
+}/*# sourceMappingURL=BeStyle.css.map */

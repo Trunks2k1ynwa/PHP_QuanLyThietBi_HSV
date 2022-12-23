@@ -90,7 +90,7 @@ body {
           display: flex;
           flex-direction: column;
           row-gap: 10px;
-          .item-active span {
+          .item_active span {
             color: $color-primary;
           }
           & > * {

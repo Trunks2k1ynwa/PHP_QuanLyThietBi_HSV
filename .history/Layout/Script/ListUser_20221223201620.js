@@ -1,4 +1,4 @@
-$('.nav-menu_Dashboard').classList.add('item-active');
+$('.nav-menu_Dashboard').classList.add('item_active');
 
 function $(classname) {
     return document.querySelector(classname)
@@ -47,8 +47,8 @@ for (let i = 0; i < [...menuNav].length; i++) {
         }
         [...menuNav][i]?.children[1]?.classList.toggle('hidden');
         [...menuNav][i].classList.add('item-active');
+        $('.nav-active').style.top = `${getY([...menuNav][i]).top-145}px`;
         [...listView][i].classList.add('view_active');
-        $('.nav-active').style.top = `${getY('.item-active').top-145}px`;
     }
     
 }
@@ -106,14 +106,7 @@ for(node of $$('.update_thietbi>i')){
     }
 }
 $('.dsnhanvien').onclick = ()=>{
-    $('.List_user').classList.add('view_active');
-    $('.nav-menu_Dashboard').classList.remove('item-active');
-    $('.nav-menu_ControlUser').classList.add('item-active');
-    $('.nav-active').style.top = `${getY('.item-active').top-145}px`;
-}
-$('.dsthietbi').onclick = ()=>{
     $('.Thiet_bi').classList.add('view_active');
-    $('.nav-menu_Dashboard').classList.remove('item-active');
-    $('.nav-menu_ThietBi').classList.add('item-active');
-    $('.nav-active').style.top = `${getY('.item-active').top-145}px`;
+    $('.nav-menu_Dashboard').classList.remove('item_active');
+    $('.nav-menu_ControlUser').classList.add('item_active');
 }

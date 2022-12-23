@@ -114,6 +114,6 @@ $('.dsnhanvien').onclick = ()=>{
 $('.dsthietbi').onclick = ()=>{
     $('.Thiet_bi').classList.add('view_active');
     $('.nav-menu_Dashboard').classList.remove('item-active');
-    $('.nav-menu_ThietBi').classList.add('item-active');
+    $('.nav-menu_Thietbi').classList.add('item-active');
     $('.nav-active').style.top = `${getY('.item-active').top-145}px`;
 }
